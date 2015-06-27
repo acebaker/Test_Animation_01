@@ -13,6 +13,9 @@
 		B84599331B3DD21A0068DFE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84599321B3DD21A0068DFE2 /* Images.xcassets */; };
 		B84599361B3DD21A0068DFE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84599341B3DD21A0068DFE2 /* LaunchScreen.xib */; };
 		B84599421B3DD21B0068DFE2 /* Test_Animation_01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84599411B3DD21B0068DFE2 /* Test_Animation_01Tests.swift */; };
+		B845994C1B3DD26D0068DFE2 /* PlaceMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845994B1B3DD26D0068DFE2 /* PlaceMarkerView.swift */; };
+		B845994E1B3DD28D0068DFE2 /* PlaceMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B845994D1B3DD28D0068DFE2 /* PlaceMarkerView.xib */; };
+		B84599501B3E43870068DFE2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845994F1B3E43870068DFE2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		B845993B1B3DD21B0068DFE2 /* Test_Animation_01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_Animation_01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84599401B3DD21B0068DFE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B84599411B3DD21B0068DFE2 /* Test_Animation_01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Animation_01Tests.swift; sourceTree = "<group>"; };
+		B845994B1B3DD26D0068DFE2 /* PlaceMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkerView.swift; sourceTree = "<group>"; };
+		B845994D1B3DD28D0068DFE2 /* PlaceMarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceMarkerView.xib; sourceTree = "<group>"; };
+		B845994F1B3E43870068DFE2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,13 @@
 			children = (
 				B845992B1B3DD21A0068DFE2 /* AppDelegate.swift */,
 				B845992D1B3DD21A0068DFE2 /* ViewController.swift */,
+				B845994F1B3E43870068DFE2 /* DetailViewController.swift */,
 				B845992F1B3DD21A0068DFE2 /* Main.storyboard */,
 				B84599321B3DD21A0068DFE2 /* Images.xcassets */,
 				B84599341B3DD21A0068DFE2 /* LaunchScreen.xib */,
 				B84599291B3DD21A0068DFE2 /* Supporting Files */,
+				B845994B1B3DD26D0068DFE2 /* PlaceMarkerView.swift */,
+				B845994D1B3DD28D0068DFE2 /* PlaceMarkerView.xib */,
 			);
 			path = Test_Animation_01;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 			files = (
 				B84599311B3DD21A0068DFE2 /* Main.storyboard in Resources */,
 				B84599361B3DD21A0068DFE2 /* LaunchScreen.xib in Resources */,
+				B845994E1B3DD28D0068DFE2 /* PlaceMarkerView.xib in Resources */,
 				B84599331B3DD21A0068DFE2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B845994C1B3DD26D0068DFE2 /* PlaceMarkerView.swift in Sources */,
 				B845992E1B3DD21A0068DFE2 /* ViewController.swift in Sources */,
 				B845992C1B3DD21A0068DFE2 /* AppDelegate.swift in Sources */,
+				B84599501B3E43870068DFE2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
