@@ -16,6 +16,11 @@
 		B845994C1B3DD26D0068DFE2 /* PlaceMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845994B1B3DD26D0068DFE2 /* PlaceMarkerView.swift */; };
 		B845994E1B3DD28D0068DFE2 /* PlaceMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B845994D1B3DD28D0068DFE2 /* PlaceMarkerView.xib */; };
 		B84599501B3E43870068DFE2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845994F1B3E43870068DFE2 /* DetailViewController.swift */; };
+		B84599541B3EFF3C0068DFE2 /* ExpandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84599531B3EFF3C0068DFE2 /* ExpandingView.swift */; };
+		B84599561B3EFF6C0068DFE2 /* ExpandingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84599551B3EFF6C0068DFE2 /* ExpandingView.xib */; };
+		B84DEBD21B45DC4F0012DD7D /* TableSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84DEBD11B45DC4F0012DD7D /* TableSwipeViewController.swift */; };
+		B84DEBD41B45DD550012DD7D /* SwipeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84DEBD31B45DD550012DD7D /* SwipeItem.swift */; };
+		B84DEBD61B45E1AE0012DD7D /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84DEBD51B45E1AE0012DD7D /* SwipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,12 @@
 		B845994B1B3DD26D0068DFE2 /* PlaceMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkerView.swift; sourceTree = "<group>"; };
 		B845994D1B3DD28D0068DFE2 /* PlaceMarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceMarkerView.xib; sourceTree = "<group>"; };
 		B845994F1B3E43870068DFE2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B84599531B3EFF3C0068DFE2 /* ExpandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingView.swift; sourceTree = "<group>"; };
+		B84599551B3EFF6C0068DFE2 /* ExpandingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandingView.xib; sourceTree = "<group>"; };
+		B84DEBD11B45DC4F0012DD7D /* TableSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSwipeViewController.swift; sourceTree = "<group>"; };
+		B84DEBD31B45DD550012DD7D /* SwipeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeItem.swift; sourceTree = "<group>"; };
+		B84DEBD51B45E1AE0012DD7D /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeTableViewCell.swift; sourceTree = "<group>"; };
+		B88BEEE91B6964030027403C /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/SwipeBGViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +94,13 @@
 		B84599281B3DD21A0068DFE2 /* Test_Animation_01 */ = {
 			isa = PBXGroup;
 			children = (
-				B845992B1B3DD21A0068DFE2 /* AppDelegate.swift */,
-				B845992D1B3DD21A0068DFE2 /* ViewController.swift */,
-				B845994F1B3E43870068DFE2 /* DetailViewController.swift */,
 				B845992F1B3DD21A0068DFE2 /* Main.storyboard */,
+				B845992B1B3DD21A0068DFE2 /* AppDelegate.swift */,
+				B84DEBD71B4B13870012DD7D /* Swipe Stuff */,
+				B84DEBD81B4B13970012DD7D /* Place Marker Stuff */,
+				B84599291B3DD21A0068DFE2 /* Supporting Files */,
 				B84599321B3DD21A0068DFE2 /* Images.xcassets */,
 				B84599341B3DD21A0068DFE2 /* LaunchScreen.xib */,
-				B84599291B3DD21A0068DFE2 /* Supporting Files */,
-				B845994B1B3DD26D0068DFE2 /* PlaceMarkerView.swift */,
-				B845994D1B3DD28D0068DFE2 /* PlaceMarkerView.xib */,
 			);
 			path = Test_Animation_01;
 			sourceTree = "<group>";
@@ -119,6 +128,30 @@
 				B84599401B3DD21B0068DFE2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B84DEBD71B4B13870012DD7D /* Swipe Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				B84DEBD11B45DC4F0012DD7D /* TableSwipeViewController.swift */,
+				B84DEBD51B45E1AE0012DD7D /* SwipeTableViewCell.swift */,
+				B84DEBD31B45DD550012DD7D /* SwipeItem.swift */,
+				B88BEEE81B6964030027403C /* SwipeBGViewController.swift */,
+			);
+			name = "Swipe Stuff";
+			sourceTree = "<group>";
+		};
+		B84DEBD81B4B13970012DD7D /* Place Marker Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				B845992D1B3DD21A0068DFE2 /* ViewController.swift */,
+				B845994F1B3E43870068DFE2 /* DetailViewController.swift */,
+				B845994B1B3DD26D0068DFE2 /* PlaceMarkerView.swift */,
+				B845994D1B3DD28D0068DFE2 /* PlaceMarkerView.xib */,
+				B84599531B3EFF3C0068DFE2 /* ExpandingView.swift */,
+				B84599551B3EFF6C0068DFE2 /* ExpandingView.xib */,
+			);
+			name = "Place Marker Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84599561B3EFF6C0068DFE2 /* ExpandingView.xib in Resources */,
 				B84599311B3DD21A0068DFE2 /* Main.storyboard in Resources */,
 				B84599361B3DD21A0068DFE2 /* LaunchScreen.xib in Resources */,
 				B845994E1B3DD28D0068DFE2 /* PlaceMarkerView.xib in Resources */,
@@ -222,9 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84DEBD21B45DC4F0012DD7D /* TableSwipeViewController.swift in Sources */,
 				B845994C1B3DD26D0068DFE2 /* PlaceMarkerView.swift in Sources */,
 				B845992E1B3DD21A0068DFE2 /* ViewController.swift in Sources */,
+				B84DEBD41B45DD550012DD7D /* SwipeItem.swift in Sources */,
 				B845992C1B3DD21A0068DFE2 /* AppDelegate.swift in Sources */,
+				B84599541B3EFF3C0068DFE2 /* ExpandingView.swift in Sources */,
+				B84DEBD61B45E1AE0012DD7D /* SwipeTableViewCell.swift in Sources */,
 				B84599501B3E43870068DFE2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +300,14 @@
 				B84599351B3DD21A0068DFE2 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B88BEEE81B6964030027403C /* SwipeBGViewController.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B88BEEE91B6964030027403C /* Base */,
+			);
+			name = SwipeBGViewController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -423,6 +469,7 @@
 				B84599471B3DD21B0068DFE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B84599481B3DD21B0068DFE2 /* Build configuration list for PBXNativeTarget "Test_Animation_01Tests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +478,7 @@
 				B845994A1B3DD21B0068DFE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

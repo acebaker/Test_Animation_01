@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lWC-N5-sBH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -53,6 +53,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Table Swipe View Controller-->
+        <scene sceneID="Paf-5B-XRK">
+            <objects>
+                <viewController id="lWC-N5-sBH" customClass="TableSwipeViewController" customModule="Test_Animation_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nzl-7n-53k"/>
+                        <viewControllerLayoutGuide type="bottom" id="mgh-fa-2Kz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mt2-KS-Hn4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eNr-zF-G3g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mgh-fa-2Kz" firstAttribute="top" secondItem="eNr-zF-G3g" secondAttribute="bottom" id="BZT-O5-WDR"/>
+                            <constraint firstItem="eNr-zF-G3g" firstAttribute="leading" secondItem="Mt2-KS-Hn4" secondAttribute="leading" id="pu3-Ud-C66"/>
+                            <constraint firstAttribute="trailing" secondItem="eNr-zF-G3g" secondAttribute="trailing" id="sc3-oS-aah"/>
+                            <constraint firstItem="eNr-zF-G3g" firstAttribute="top" secondItem="Mt2-KS-Hn4" secondAttribute="top" id="urh-um-e0Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="eNr-zF-G3g" id="8ah-MM-lE2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyu-ZH-DfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="1214"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="XHR-fp-Enw">
